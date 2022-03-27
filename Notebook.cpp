@@ -92,7 +92,31 @@ string Notebook :: read(int page,int row,int col,Direction h,int lenght)
 
  void Notebook :: erase(int page,int row,int col,Direction h,int lenght) 
 {
- 
+     if((col+lenght)<=100){
+     
+     if(h==Direction::Horizontal){//write Horizontal
+      
+         int j=0;
+         for(int i=col;i<(col+lenght);i++){
+            
+           
+             
+            this->notebook[page][row][i]='~';
+            j++;
+         };
+     }
+     
+  
+  }
+  if(h==Direction::Vertical){//write vertical
+         int j=0;
+         for(int i=row;i<=(col+lenght);i++){
+            
+            this->notebook[page][i][col]='~';
+            j++;
+         };
+     }
+     
 }
 
  void Notebook :: show(int page) 
