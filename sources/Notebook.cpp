@@ -7,6 +7,7 @@ using namespace ariel;
 #include "Direction.hpp"
 using ariel::Direction;
 #include <cctype>
+const int MAA=200;
 const int MEA_DA = 100;
 const int abcone = 32;
 const int abct = 126;
@@ -184,9 +185,9 @@ void Notebook ::show(int page)
    {
       throw runtime_error("negative");
    }
-   for(int i=100;i<200;i++){
+   for(int i=MEA_DA;i<MAA;i++){
       cout << i <<":";
-      for(int j=0;j<100;j++){
+      for(int j=0;j<MEA_DA;j++){
        
        cout << this->notebook[page][i][j];
       }
