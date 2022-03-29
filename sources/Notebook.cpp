@@ -159,7 +159,7 @@ string Notebook :: read(int page,int row,int col,Direction h,int lenght)
      
   
   }
-  if(h==Direction::Vertical){//write vertical
+  if(h==Direction::Vertical){//write vertical j
          int j=0;
          for(int i=row;i<=(col+lenght);i++){
             
